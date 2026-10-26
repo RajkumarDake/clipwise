@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="t d">
+  <title id="t">clipwise pipeline</title>
+  <desc id="d">Video or link, fetch, transcribe, the agent picks moments with the rubric, you approve, render with face-tracked crop, captions, SFX and loudness, then Shorts with titles.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b949e"/>
+    </marker>
+    <style>
+      .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+      .box { fill: #161b22; stroke-width: 2; }
+      .step { font: 600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.5px; }
+      .title { font: 700 21px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e6edf3; }
+      .sub { font: 400 14px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #9da7b3; }
+      .chip { fill: #21262d; stroke: #30363d; stroke-width: 1; }
+      .chiptext { font: 600 14px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e6edf3; }
+      .line { stroke: #8b949e; stroke-width: 2.5; fill: none; }
+      .note { font: 400 13px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #8b949e; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="1" y="1" width="1198" height="468" rx="18"/>
+
+  <!-- Row 1 -->
+  <rect class="box" x="40" y="50" width="245" height="125" rx="14" stroke="#8b949e"/>
+  <text class="step" x="62" y="80" fill="#8b949e">INPUT</text>
+  <text class="title" x="62" y="112">Video or link</text>
+  <text class="sub" x="62" y="138">file, YouTube, Drive,</text>
+  <text class="sub" x="62" y="157">Dropbox, direct URL</text>
+
+  <rect class="box" x="330" y="50" width="245" height="125" rx="14" stroke="#58a6ff"/>
+  <text class="step" x="352" y="80" fill="#58a6ff">1 · FETCH</text>
+  <text class="title" x="352" y="112">Clean source</text>
+  <text class="sub" x="352" y="138">yt-dlp, HDR to SDR,</text>
+  <text class="sub" x="352" y="157">constant 30 fps</text>
+
+  <rect class="box" x="620" y="50" width="245" height="125" rx="14" stroke="#bc8cff"/>
+  <text class="step" x="642" y="80" fill="#bc8cff">2 · TRANSCRIBE</text>
+  <text class="title" x="642" y="112">Word timings</text>
+  <text class="sub" x="642" y="138">faster-whisper,</text>
+  <text class="sub" x="642" y="157">runs locally, per word</text>
+
+  <rect class="box" x="910" y="50" width="250" height="125" rx="14" stroke="#f0883e"/>
+  <text class="step" x="932" y="80" fill="#f0883e">3 · AGENT PICKS</text>
+  <text class="title" x="932" y="112">Best moments</text>
+  <text class="sub" x="932" y="138">reads the transcript,</text>
+  <text class="sub" x="932" y="157">scores with the rubric</text>
+
+  <line class="line" x1="287" y1="112" x2="326" y2="112" marker-end="url(#arrow)"/>
+  <line class="line" x1="577" y1="112" x2="616" y2="112" marker-end="url(#arrow)"/>
+  <line class="line" x1="867" y1="112" x2="906" y2="112" marker-end="url(#arrow)"/>
+
+  <!-- bend from row 1 to row 2 -->
+  <path class="line" d="M1035,177 V222 H162 V262" marker-end="url(#arrow)"/>
+
+  <!-- Row 2 -->
+  <rect class="box" x="40" y="266" width="245" height="160" rx="14" stroke="#3fb950"/>
+  <text class="step" x="62" y="296" fill="#3fb950">4 · YOU APPROVE</text>
+  <text class="title" x="62" y="328">Picks list</text>
+  <text class="sub" x="62" y="354">timestamps, titles,</text>
+  <text class="sub" x="62" y="373">why each one works</text>
+
+  <rect class="box" x="330" y="266" width="535" height="160" rx="14" stroke="#ff7b72"/>
+  <text class="step" x="352" y="296" fill="#ff7b72">5 · RENDER 1080×1920</text>
+  <rect class="chip" x="352" y="314" width="235" height="40" rx="9"/>
+  <text class="chiptext" x="368" y="340">Face-tracked 9:16 crop</text>
+  <rect class="chip" x="600" y="314" width="245" height="40" rx="9"/>
+  <text class="chiptext" x="616" y="340">Word-by-word captions</text>
+  <rect class="chip" x="352" y="364" width="235" height="40" rx="9"/>
+  <text class="chiptext" x="368" y="390">Silence cut + punch-ins</text>
+  <rect class="chip" x="600" y="364" width="245" height="40" rx="9"/>
+  <text class="chiptext" x="616" y="390">SFX, music, −14 LUFS</text>
+
+  <rect class="box" x="910" y="266" width="250" height="160" rx="14" stroke="#d29922"/>
+  <text class="step" x="932" y="296" fill="#d29922">6 · DELIVER</text>
+  <text class="title" x="932" y="328">Shorts + titles</text>
+  <text class="sub" x="932" y="354">clip_N.mp4, title,</text>
+  <text class="sub" x="932" y="373">description, hashtags,</text>
+  <text class="sub" x="932" y="392">contact sheet check</text>
+
+  <line class="line" x1="287" y1="346" x2="326" y2="346" marker-end="url(#arrow)"/>
+  <line class="line" x1="867" y1="346" x2="906" y2="346" marker-end="url(#arrow)"/>
+
+  <text class="note" x="40" y="452">Runs locally on CPU. No API keys, no uploads.</text>
+</svg>

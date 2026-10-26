@@ -1,0 +1,24 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# media and job output never belong in the repo
+clipwise-work/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.m4a
+*.mp3
+*.wav
+*.onnx
+*.ttf
+cookies.txt
+picks.local.json
+
+# editors / os
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,73 @@
+[
+ {
+  "id": "1",
+  "start": 65.5,
+  "end": 110.35,
+  "title": "Is every flood caused by climate change?",
+  "hook_line": "It would be wrong to say every forest fire is caused by climate change",
+  "hook_start": 74.85,
+  "hook_end": 80.1,
+  "payoff_start": 102.0,
+  "why": "Opens on a claim people don't expect from a climate scientist, resolves it with 'more likely, not always'.",
+  "comment_bait": "Did you think every flood was climate change?",
+  "description": "A flood scientist on what climate change does and does not cause.",
+  "hashtags": [
+   "#shorts",
+   "#climate",
+   "#science",
+   "#floods"
+  ],
+  "scores": {
+   "hook": 3,
+   "emotion": 1,
+   "curiosity": 3,
+   "story": 2,
+   "value": 3,
+   "relatable": 1
+  },
+  "caption_overrides": [
+   {
+    "w": 219,
+    "text": ""
+   }
+  ]
+ },
+ {
+  "id": "2",
+  "start": 126.95,
+  "end": 155.3,
+  "title": "How far ahead can we predict a flood?",
+  "hook_line": "How good are we at predicting the next flood?",
+  "payoff_start": 153.2,
+  "why": "Asks the question everyone has, ends on a concrete number: two or three weeks.",
+  "comment_bait": "How much warning would you need?",
+  "description": "Earth-system models can now see floods, fires and heat waves coming weeks ahead.",
+  "hashtags": [
+   "#shorts",
+   "#weather",
+   "#science"
+  ],
+  "scores": {
+   "hook": 2,
+   "emotion": 1,
+   "curiosity": 3,
+   "story": 1,
+   "value": 3,
+   "relatable": 2
+  },
+  "caption_overrides": [
+   {
+    "w": 381,
+    "text": ""
+   },
+   {
+    "w": 388,
+    "text": ""
+   },
+   {
+    "w": 389,
+    "text": ""
+   }
+  ]
+ }
+]
